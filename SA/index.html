@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Section Access</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  
+  <script src="style.css"></script>
+</head>
+<body>
+    
+<div class="container">
+  <h2>Section Access</h2>
+  <form action="/action_page.php">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" placeholder="Enter Name">
+    </div>
+    <div class="form-group">
+      <label for="PSID">PSID</label>
+      <input type="text" class="form-control" placeholder="Enter PSID">
+    </div>
+    <div class="form-group">
+            <label for="Mname">Manager Name</label>
+            <input type="text" class="form-control" placeholder="Your Manager Name">
+    </div>
+    <div class="form-group">
+      <label for="Mname">Manager email</label>
+      <input type="text" class="form-control" placeholder="Manager's email">
+</div>
+
+<!--Dropdown-->
+<div class="form-group">
+          <label>Region</label>
+          <select class="form-control form-group region selectFilter" data-target = "country">
+          <option value="-1">Region</option>
+          <option data-ref="asp">ASP</option>
+          <option data-ref="canada">CANADA</option>
+          <option data-ref="eur">EUROPE</option>
+          <option data-ref="lam">LAM</option>
+          <option data-ref="mena">MENA</option>
+          <option data-ref="us">US</option>
+          </select>
+</div>
+<div>
+<label>Country</label>
+<select class="form-control form-group country selectFilter">
+<option value="-1">Country</option>
+<option data-belong="asp">Australia</option>
+<option data-belong="asp">Bangladesh</option>
+<option data-belong="asp">China (Inc Pearl River Deltha)</option>
+<option data-belong="asp">China Rural Bank</option>
+<option data-belong="asp">HASE China</option>
+<option data-belong="asp">HASE Hong Kong</option>
+<option data-belong="asp">HASE Macau</option>
+<option data-belong="asp">HASE Singapore</option>
+<option data-belong="asp">Hong Kong</option>
+<option data-belong="asp">India</option>
+<option data-belong="asp">Indonesia</option>
+<option data-belong="asp">Japan</option>
+<option data-belong="asp">Macau</option>
+<option data-belong="asp">Malaysia</option>
+<option data-belong="asp">Mauritius</option>
+<option data-belong="asp">New Zealand</option>
+<option data-belong="asp">Philippines</option>
+<option data-belong="asp">Singapore</option>
+<option data-belong="asp">South Korea-SEL</option>
+<option data-belong="asp">South Korea-SLS</option>
+
+<option data-belong="canada">Canada</option>
+
+<option data-belong="eur">Armenia</option>
+<option data-belong="eur">Belgium</option>
+<option data-belong="eur">Bermuda</option>
+<option data-belong="eur">Channel Island</option>
+<option data-belong="eur">Czech Republic</option>
+<option data-belong="eur">France</option>
+<option data-belong="eur">Germany</option>
+<option data-belong="eur">Greece</option>
+<option data-belong="eur">Ireland</option>
+<option data-belong="eur">Israel</option>
+<option data-belong="eur">Italy</option>
+<option data-belong="eur">Luxembourg</option>
+<option data-belong="eur">Malta</option>
+<option data-belong="eur">Netherlands</option>
+<option data-belong="eur">Poland</option>
+<option data-belong="eur">Russia</option>
+<option data-belong="eur">South Africa</option>
+<option data-belong="eur">Spain</option>
+<option data-belong="eur">Switzerland - HBCH</option>
+<option data-belong="eur">Switzerland - PB</option>
+<option data-belong="eur">UK</option>
+<option data-belong="eur">UK - HBLO</option>
+<option data-belong="eur">UK - HBUK</option>
+
+<option data-belong="lam">Argentina</option>
+<option data-belong="lam">Brazil</option>
+<option data-belong="lam">Chile</option>
+<option data-belong="lam">Mexico</option>
+<option data-belong="lam">Uraguay</option>
+
+<option data-belong="mena">Algeria</option>
+<option data-belong="mena">Bahrain</option>
+<option data-belong="mena">Egypt</option>
+<option data-belong="mena">Kuwait</option>
+<option data-belong="mena">Oman</option>
+<option data-belong="mena">Qatar</option>
+<option data-belong="mena">Turkey</option>
+<option data-belong="mena">UAE</option>
+
+<option data-belong="us">US</option>
+</select>
+</div>
+<!--MultiDropdown-->
+<div class="form-group">
+    <label>LOB</label>
+    <select class="form-control form-group">
+    <option value="-1">LOB</option>
+    <option>GBM</option>
+    <option>GPB</option>
+    <option>RBWM</option>
+    <option>CMB</option>
+    </select>
+</div>
+
+        
+    <button type="submit" class="btn form-group btn-default">Submit</button>
+  </form>
+</div>
+<script src="selectFilter.min.js" async defer></script>
+<script src="main.js" async defer></script>
+</body>
+</html>
